@@ -6,7 +6,7 @@ import { Calendar } from '../../components/ui/calendar';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '../../components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../components/ui/select';
 import { Textarea } from '../../components/ui/textarea';
-import { Heart, Calendar as CalendarIcon, Info, Plus } from 'lucide-react';
+import { Heart, Calendar as CalendarIcon, Plus } from 'lucide-react';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import type { CycleEntry } from '../../types';
 import { toast } from '../../hooks/use-toast';
@@ -92,10 +92,10 @@ const CycleTracker = () => {
     }));
   };
 
-  const getEntryForDate = (date: Date) => {
-    const dateStr = date.toISOString().split('T')[0];
-    return cycleEntries.find(entry => entry.date === dateStr);
-  };
+  // const getEntryForDate = (date: Date) => {
+  //   const dateStr = date.toISOString().split('T')[0];
+  //   return cycleEntries.find(entry => entry.date === dateStr);
+  // };
 
   const currentPhase = cycleEntries.length > 0 ? cycleEntries[cycleEntries.length - 1].phase : null;
 

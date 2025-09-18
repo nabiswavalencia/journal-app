@@ -14,7 +14,7 @@ import type { Habit } from '../../types';
 import { toast } from '../../hooks/use-toast';
 
 const HABIT_ICONS = ['💪', '📚', '🧘', '💧', '🏃', '🎯', '🌟', '✨', '🌸', '💝'];
-const HABIT_COLORS = ['blush-pink', 'sage-green', 'soft-lavender', 'dusty-rose', 'mint-green'];
+// const HABIT_COLORS = ['blush-pink', 'sage-green', 'soft-lavender', 'dusty-rose', 'mint-green'];
 
 const HabitTracker = () => {
   const [habits, setHabits] = useLocalStorage<Habit[]>('habits', []);

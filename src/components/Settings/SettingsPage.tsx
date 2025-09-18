@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { Button } from '../../components/ui/button';
 import { Card, CardHeader, CardContent, CardTitle } from '../../components/ui/card';

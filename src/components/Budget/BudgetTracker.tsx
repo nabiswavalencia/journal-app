@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
 import { Input } from '../../components/ui/input';
-import { Badge } from '../../components/ui/badge';
+// import { Badge } from '../../components/ui/badge';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '../../components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../components/ui/select';
 import { DollarSign, Plus, TrendingUp, TrendingDown, Trash2 } from 'lucide-react';
@@ -94,11 +94,11 @@ const BudgetTracker = () => {
     toast({ title: 'Entry deleted' });
   };
 
-  const getCategoryTotal = (category: string, type: 'income' | 'expense', currency: 'KSH' | 'USD') => {
-    return monthlyEntries
-      .filter(entry => entry.category === category && entry.type === type && entry.currency === currency)
-      .reduce((sum, entry) => sum + entry.amount, 0);
-  };
+  // const getCategoryTotal = (category: string, type: 'income' | 'expense', currency: 'KSH' | 'USD') => {
+  //   return monthlyEntries
+  //     .filter(entry => entry.category === category && entry.type === type && entry.currency === currency)
+  //     .reduce((sum, entry) => sum + entry.amount, 0);
+  // };
 
   return (
     <div className="space-y-6">
