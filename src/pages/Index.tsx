@@ -1,5 +1,5 @@
-import Navbar from '@/components/Layout/Navbar';
-import DashboardView from '@/components/Dashboard/DashboardView';
+import Navbar from '../components/Layout/Navbar';
+import DashboardView from '../components/Dashboard/DashboardView';
 
 const Index = () => {
   return (

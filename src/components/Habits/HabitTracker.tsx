@@ -7,7 +7,7 @@ import { Badge } from '../../components/ui/badge';
 import { Checkbox } from '../../components/ui/checkbox';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '../../components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../components/ui/select';
-import { Calendar } from '../../components/ui/calendar';
+// import { Calendar } from '../../components/ui/calendar'; 
 import { Plus, Target, Flame, Calendar as CalendarIcon, Trash2 } from 'lucide-react';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import type { Habit } from '../../types';
